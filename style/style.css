@@ -32,8 +32,6 @@ li { display: inline-block; margin: 0 4px; }
 li a { display: block; text-decoration: none; border-bottom: none; padding: 18px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-transition: all 0.3s ease-in, 1s; -moz-transition: all 0.3s ease-in, 1s; -o-transition: all 0.3s ease-in, 1s; -ms-transition: all 0.3s ease-in, 1s; transition: all 0.3s ease-in, 1s; }
 .facebook { background: url(../images/facebook.png) center no-repeat #444749; }
 .facebook:hover { background-color: #4265b9; }
-.instagram { background: url(../images/instagram.png) center no-repeat #444749; }
-.instagram:hover { background-color: #956751; }
 .linkedin { background: url(../images/linkedin.png) center no-repeat #444749; }
 .linkedin:hover { background-color: #0073b2; }
 .mail { background: url(../images/mail.png) center no-repeat #444749; }
