@@ -1,64 +1,234 @@
-html, body, .container-table { height: 100%; }
-
-body { color: #363b3f; background: #000000; }
-
-.section { padding: 0px; }
-.section h1, .section h2, .section h3, .section h4 { font-family: "Lato", sans-serif; font-weight: 700; color: #ffffff; }
-.section p { font-family: "Lato", sans-serif; font-weight: 400; font-size: 15px; line-height: 24px; }
-.section .heading { text-align: center; }
-.section .profilePic { text-align: center; margin: 0 auto; float: none; max-width: 300px; }
-
-section.colored h1, section.colored h2, section.colored h3, section.colored h4, section.colored p { color: white; }
-section .centered { margin: 0 auto; float: none; }
-
-.btn, .filter a { font-family: "Lato", sans-serif; font-weight: 400; font-size: 14px; text-decoration: none; background: white; color: #b6b7b7; border: 1px solid #b6b7b7; padding: 18px; -webkit-transition: all 0.3s ease-in, 0s; -moz-transition: all 0.3s ease-in, 0s; -o-transition: all 0.3s ease-in, 0s; -ms-transition: all 0.3s ease-in, 0s; transition: all 0.3s ease-in, 0s; }
-.btn:hover, .filter a:hover, .btn:focus, .filter a:focus { background-color: #000000; border-color: #000000; color: white; }
-
-.borderBtn { font-family: "Lato", sans-serif; font-weight: 700; font-size: 12px; text-decoration: none; color: white; border: 1px solid white; padding: 10px 20px; display: inline-block; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-transition: all 0.3s ease-in, 0s; -moz-transition: all 0.3s ease-in, 0s; -o-transition: all 0.3s ease-in, 0s; -ms-transition: all 0.3s ease-in, 0s; transition: all 0.3s ease-in, 0s; }
-.borderBtn:hover, .borderBtn:focus { background-color: white; color: #000000; text-decoration: none; }
-
-.loader { width: 100%; height: 100%; background: white; position: fixed; top: 0px; left: 0px; z-index: 1000; }
-.loader .inner { width: 100%; height: 100%; background: url(../images/loader.gif) center center no-repeat; }
-
-.container-table { display: table; }
-.vertical-center-row { display: table-cell; vertical-align: middle; }
-
-.hero { color: white; }
-.hero .borderBtn, .hero .contactform button, .contactform .hero button { margin-top: 10px; }
-.hero h3 { color: white !important; margin-top: 10px; }
-
-ul { width: 100%; text-align: center; margin-top: 20px; padding: 0px; }
-li { display: inline-block; margin: 0 4px; }
-li a { display: block; text-decoration: none; border-bottom: none; padding: 18px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-transition: all 0.3s ease-in, 1s; -moz-transition: all 0.3s ease-in, 1s; -o-transition: all 0.3s ease-in, 1s; -ms-transition: all 0.3s ease-in, 1s; transition: all 0.3s ease-in, 1s; }
-.facebook { background: url(../images/facebook.png) center no-repeat #444749; }
-.facebook:hover { background-color: #4265b9; }
-.linkedin { background: url(../images/linkedin.png) center no-repeat #444749; }
-.linkedin:hover { background-color: #0073b2; }
-.mail { background: url(../images/mail.png) center no-repeat #444749; }
-.mail:hover { background-color: #cc2727; }
-.github { background: url(../images/github.png) center no-repeat #444749; }
-.github:hover { background-color: #6c4187; }
-
-img { max-width: 100%; height: auto; }
-
-.clear { clear: both; }
-
-::selection { background-color: #d82c2e; color: white; }
-
-::-moz-selection { background-color: #d82c2e; color: white; }
-
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-    h3 { font-size: 18px !important; }
-    h2 { font-size: 24px !important; }
+html, body, .container-table {
+    height: 100%;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : landscape) { 
-    h3 { font-size: 16px !important; }
-    h2 { font-size: 22px !important; }
-    .profilePic { max-width: 100px !important; }
+body {
+    color: #363b3f;
+    background: orchid;
+}
+
+.section {
+    padding: 0;
+}
+
+.section h1, .section h2, .section h3, .section h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+.section p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.section .heading {
+    text-align: center;
+}
+
+.section .profilePic {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    max-width: 300px;
+}
+
+section.colored h1, section.colored h2, section.colored h3, section.colored h4, section.colored p {
+    color: white;
+}
+
+section .centered {
+    margin: 0 auto;
+    float: none;
+}
+
+.btn, .filter a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    background: white;
+    color: #b6b7b7;
+    border: 1px solid #b6b7b7;
+    padding: 18px;
+    -webkit-transition: all 0.3s ease-in, 0s;
+    -moz-transition: all 0.3s ease-in, 0s;
+    -o-transition: all 0.3s ease-in, 0s;
+    -ms-transition: all 0.3s ease-in, 0s;
+    transition: all 0.3s ease-in, 0s;
+}
+
+.btn:hover, .filter a:hover, .btn:focus, .filter a:focus {
+    background-color: #000000;
+    border-color: #000000;
+    color: white;
+}
+
+.borderBtn {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in, 0s;
+    -moz-transition: all 0.3s ease-in, 0s;
+    -o-transition: all 0.3s ease-in, 0s;
+    -ms-transition: all 0.3s ease-in, 0s;
+    transition: all 0.3s ease-in, 0s;
+}
+
+.borderBtn:hover, .borderBtn:focus {
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.container-table {
+    display: table;
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hero {
+    color: white;
+}
+
+.hero .borderBtn, .hero .contactform button, .contactform .hero button {
+    margin-top: 10px;
+}
+
+.hero h3 {
+    color: white !important;
+    margin-top: 10px;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    border-bottom: none;
+    padding: 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in, 1s;
+    -moz-transition: all 0.3s ease-in, 1s;
+    -o-transition: all 0.3s ease-in, 1s;
+    -ms-transition: all 0.3s ease-in, 1s;
+    transition: all 0.3s ease-in, 1s;
+}
+
+.facebook {
+    background: url(../images/facebook.png) center no-repeat #444749;
+}
+
+.facebook:hover {
+    background-color: #4265b9;
+}
+
+.linkedin {
+    background: url(../images/linkedin.png) center no-repeat #444749;
+}
+
+.linkedin:hover {
+    background-color: #0073b2;
+}
+
+.mail {
+    background: url(../images/mail.png) center no-repeat #444749;
+}
+
+.mail:hover {
+    background-color: #cc2727;
+}
+
+.github {
+    background: url(../images/github.png) center no-repeat #444749;
+}
+
+.github:hover {
+    background-color: #6c4187;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+::selection {
+    background-color: #d82c2e;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #d82c2e;
+    color: white;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    h3 {
+        font-size: 18px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (orientation: landscape) {
+    h3 {
+        font-size: 16px !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+
+    .profilePic {
+        max-width: 100px !important;
+    }
 }
